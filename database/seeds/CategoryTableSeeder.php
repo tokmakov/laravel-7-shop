@@ -2,16 +2,14 @@
 
 use Illuminate\Database\Seeder;
 
-class CategoryTableSeeder extends Seeder
-{
+class CategoryTableSeeder extends Seeder {
     /**
      * Run the database seeds.
      *
      * @return void
      */
-    public function run()
-    {
+    public function run() {
         // создать 10 категорий
-        factory(App\Category::class, 10)->create();
+        factory(App\Models\Category::class, 10)->create();
     }
 }
