@@ -1,0 +1,31 @@
+.list-item .card-header {
+    min-height: 4rem;
+}
+    .list-item .card-header h3 {
+        font-size: 1.1rem;
+    }
+
+#catalog-sidebar, #brands-popular {
+    list-style: none;
+    padding-left: 0;
+}
+    #catalog-sidebar ul {
+        list-style: none;
+        padding-left: 1rem;
+    }
+    #catalog-sidebar > ul {
+        padding-left: 0;
+    }
+        #catalog-sidebar li {
+            position: relative;
+        }
+        #catalog-sidebar a {
+            display: inline-block;
+            margin-right: 1.2rem;
+        }
+    #catalog-sidebar .badge {
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
