@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdd1d030-9923-4b76-bdef-254ebb1e10f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/seeds/BrandTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BrandTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CategoryTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategoryTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ProductTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ProductTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/BrandFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/BrandFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CategoryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ProductFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProductFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +289,7 @@
       <workItem from="1606370961140" duration="3861000" />
       <workItem from="1606381039020" duration="11113000" />
       <workItem from="1606553378715" duration="3121000" />
-      <workItem from="1606640885883" duration="1630000" />
+      <workItem from="1606640885883" duration="2107000" />
     </task>
     <servers />
   </component>
