@@ -16,9 +16,10 @@ class ImageSaver {
      * @return string|null — имя файла изображения для сохранения в БД
      */
     public function upload($request, $item, $dir) {
-        $name = null;
+        $name = $item->image ?? null;
         if ($item && $request->remove) { // если надо удалить изображение
             $this->remove($item, $dir);
+            $name = null;
         }
         $source = $request->file('image');
         if ($source) { // если было загружено изображение

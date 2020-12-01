@@ -55,7 +55,7 @@ abstract class CatalogRequest extends FormRequest {
                 'regex:~^[-_a-z0-9]+$~i',
             ],
             'image' => [
-                'mimes:jpeg,png',
+                'mimes:jpeg,jpg,png',
                 'max:5000'
             ],
         ];
@@ -81,7 +81,7 @@ abstract class CatalogRequest extends FormRequest {
                 'regex:~^[-_a-z0-9]+$~i',
             ],
             'image' => [
-                'mimes:jpeg,png',
+                'mimes:jpeg,jpg,png',
                 'max:5000'
             ],
         ];
