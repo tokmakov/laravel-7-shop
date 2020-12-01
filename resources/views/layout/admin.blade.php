@@ -59,7 +59,8 @@
                        href="{{ route('user.logout') }}" class="nav-link">Выйти</a>
                 </li>
             </ul>
-            <form id="logout-form" action="{{ route('user.logout') }}" method="post" class="d-none">
+            <form id="logout-form" action="{{ route('user.logout') }}" method="post"
+                  class="d-none">
                 @csrf
             </form>
         </div>
