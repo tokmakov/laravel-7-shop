@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdd1d030-9923-4b76-bdef-254ebb1e10f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/ImageSaver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/ImageSaver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CatalogRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CatalogRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/basket/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/basket/checkout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +287,7 @@
       <workItem from="1606553378715" duration="3121000" />
       <workItem from="1606640885883" duration="3770000" />
       <workItem from="1606728466833" duration="1794000" />
-      <workItem from="1606813169236" duration="4823000" />
+      <workItem from="1606813169236" duration="5636000" />
     </task>
     <servers />
   </component>

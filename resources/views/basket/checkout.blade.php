@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 class="mb-4">Оформить заказ</h1>
-    @if ($profiles)
+    @if ($profiles->count)
         @include('basket.select', ['current' => $profile->id ?? 0])
     @endif
     <form method="post" action="{{ route('basket.saveorder') }}" id="checkout">
