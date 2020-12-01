@@ -22,7 +22,7 @@
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <!-- Бренд и кнопка «Гамбургер» -->
-        <a class="navbar-brand" href="{{ route('index') }}">Панель управления</a>
+        <a class="navbar-brand" href="{{ route('admin.index') }}">Панель управления</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbar-example" aria-controls="navbar-example"
                 aria-expanded="false" aria-label="Toggle navigation">
