@@ -94,7 +94,7 @@ Route::group([
  * Регистрация, вход в ЛК, восстановление пароля
  */
 Route::name('user.')->prefix('user')->group(function () {
-    Auth::routes([ 'verify' => true ]);
+    Auth::routes();
 });
 
 /*

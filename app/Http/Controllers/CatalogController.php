@@ -15,10 +15,6 @@ class CatalogController extends Controller {
         return view('catalog.index', compact('roots', 'brands'));
     }
 
-    /*
-     * https://www.youtube.com/watch?v=LBSW-VubmgA
-     */
-
     public function category(Category $category, ProductFilter $filters) {
         $products = Product::categoryProducts($category->id)
             ->filterProducts($filters)

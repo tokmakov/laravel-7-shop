@@ -16,15 +16,11 @@ class ProductFilter {
     public function apply($builder) {
         $this->builder = $builder;
         foreach ($this->request->query() as $filter => $value) {
-            if ($this->exists($filter)) {
+            if (method_exists($this, $filter)) {
                 $this->$filter($value);
             }
         }
         return $this->builder;
-    }
-
-    private function exists($filter) {
-        return method_exists($this, $filter);
     }
 
     private function price($value) {

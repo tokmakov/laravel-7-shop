@@ -51,14 +51,14 @@ class Product extends Model {
     /**
      * Позволяет выбирать товары категории и всех ее потомков
      *
-     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param \Illuminate\Database\Eloquent\Builder $builder
      * @param integer $id
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopeCategoryProducts($query, $id) {
+    public function scopeCategoryProducts($builder, $id) {
         $descendants = Category::getAllChildren($id);
         $descendants[] = $id;
-        return $query->whereIn('category_id', $descendants);
+        return $builder->whereIn('category_id', $descendants);
     }
 
     /**

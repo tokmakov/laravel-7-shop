@@ -11,7 +11,6 @@ jQuery(document).ready(function($) {
      * Автоматическое создание slug при вводе name (замена кириллицы на латиницу)
      */
     $('input[name="name"]').on('input', function() {
-        console.log('typing...');
         var map = {
             'А': 'A', 'Б': 'B', 'В': 'V', 'Г': 'G', 'Д': 'D', 'Е': 'E', 'Ё': 'Yo', 'Ж': 'Zh',
             'З': 'Z', 'И': 'I', 'Й': 'J', 'К': 'K', 'Л': 'L', 'М': 'M', 'Н': 'N', 'О': 'O',

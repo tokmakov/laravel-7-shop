@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdd1d030-9923-4b76-bdef-254ebb1e10f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_28_130327_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_28_130327_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/basket/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/basket/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/profile/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/profile/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route.txt" beforeDir="false" afterPath="$PROJECT_DIR$/route.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/ProductFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/ProductFilter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CatalogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CatalogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,15 +44,13 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="PhpDebugGeneral" xdebug_debug_port="9999" />
+  <component name="PhpDebugGeneral" xdebug_debug_port="9999">
+    <xdebug_debug_ports port="9999" />
+    <xdebug_debug_ports port="9003" />
+  </component>
   <component name="PhpServers">
     <servers>
       <server host="www.host21.ru" id="72e69e37-c544-458a-af7d-4a0fbab9db1c" name="www.host21.ru" />
-      <server host="www.host24.ru" id="a0557433-36b3-473d-984e-1b7c9180f6e6" name="www.host24.ru" use_path_mappings="true">
-        <path_mappings>
-          <mapping local-root="$PROJECT_DIR$/public" remote-root="D:/work/localhost24/www/public" />
-        </path_mappings>
-      </server>
     </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP72">
@@ -188,12 +192,12 @@
     <property name="Constants" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/item" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -310,7 +314,38 @@
       <workItem from="1607245077773" duration="2323000" />
       <workItem from="1607329552425" duration="9196000" />
       <workItem from="1607411255829" duration="22000" />
-      <workItem from="1607518844572" duration="1632000" />
+      <workItem from="1607518844572" duration="2292000" />
+      <workItem from="1607606196421" duration="760000" />
+      <workItem from="1607607207115" duration="619000" />
+      <workItem from="1607609997191" duration="940000" />
+      <workItem from="1607669589616" duration="4703000" />
+      <workItem from="1608104437311" duration="5762000" />
+      <workItem from="1608203772329" duration="301000" />
+      <workItem from="1608211185323" duration="1889000" />
+      <workItem from="1608281826272" duration="605000" />
+      <workItem from="1608360760817" duration="375000" />
+      <workItem from="1608361266581" duration="3656000" />
+      <workItem from="1608445443646" duration="1810000" />
+      <workItem from="1608539144029" duration="3401000" />
+      <workItem from="1608623286889" duration="1962000" />
+      <workItem from="1608712760197" duration="49000" />
+      <workItem from="1608812528984" duration="2241000" />
+      <workItem from="1608878093467" duration="2637000" />
+      <workItem from="1609053734946" duration="767000" />
+      <workItem from="1609062609249" duration="253000" />
+      <workItem from="1609063799326" duration="733000" />
+      <workItem from="1609250355739" duration="11000" />
+      <workItem from="1609318339073" duration="633000" />
+      <workItem from="1611304537961" duration="130000" />
+      <workItem from="1611830829287" duration="41000" />
+      <workItem from="1611906749424" duration="1788000" />
+      <workItem from="1612006231832" duration="167000" />
+      <workItem from="1612185543316" duration="391000" />
+      <workItem from="1612853438279" duration="1120000" />
+      <workItem from="1613025132499" duration="1584000" />
+      <workItem from="1613288155436" duration="695000" />
+      <workItem from="1613726728121" duration="1053000" />
+      <workItem from="1623490850249" duration="332000" />
     </task>
     <servers />
   </component>
@@ -320,15 +355,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php</url>
-          <line>112</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

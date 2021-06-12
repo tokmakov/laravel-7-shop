@@ -147,11 +147,6 @@ class PageController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function uploadImage(Request $request) {
-        $request->validate([
-            'title' => 'required|unique:posts|max:255',
-            'author.name' => 'required',
-            'author.description' => 'required',
-        ]);
         $this->validate($request, ['image' => [
             'mimes:jpeg,png',
             'max:5000'
@@ -159,18 +154,6 @@ class PageController extends Controller {
         $path = $request->file('image')->store('page', 'public');
         $url = Storage::disk('public')->url($path);
         return response()->json(['image' => $url]);
-        /*
-        $validator = Validator::make($request->all(), ['image' => [
-            'mimes:jpeg,png',
-            'max:5000' // 5 Мбайт
-        ]]);
-        if ($validator->passes()) {
-            $path = $request->file('image')->store('page', 'public');
-            $url = Storage::disk('public')->url($path);
-            return response()->json(['image' => $url]);
-        }
-        return response()->json(['errors' => $validator->errors()->all()]);
-        */
     }
 
     /**
@@ -202,7 +185,7 @@ class PageController extends Controller {
         $images = $dom->getElementsByTagName('img');
         foreach ($images as $img) {
             $src = $img->getAttribute('src');
-            $pattern = '~/storage/page/([0-9a-f]{32}\.(jpeg|png|gif))~';
+            $pattern = '~/storage/page/([0-9a-z]+\.(jpeg|png|gif))~i';
             if (preg_match($pattern, $src, $match)) {
                 $name = $match[1];
                 if (Storage::disk('public')->exists('page/' . $name)) {

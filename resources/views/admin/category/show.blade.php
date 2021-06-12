@@ -50,7 +50,7 @@
                     </a>
                 </td>
                 <td>
-                    <form method="post" onsubmit="return confirm('Удалить эту страницу?')"
+                    <form method="post" onsubmit="return confirm('Удалить эту категорию?')"
                           action="{{ route('admin.category.destroy', ['category' => $child->id]) }}">
                         @csrf
                         @method('DELETE')
