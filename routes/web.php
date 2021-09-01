@@ -52,7 +52,7 @@ Route::group([
  */
 Route::group([
     'as' => 'basket.', // имя маршрута, например basket.index
-    'prefix' => 'basket', // префикс маршрута, например bsaket/index
+    'prefix' => 'basket', // префикс маршрута, например basket/index
 ], function () {
     // список всех товаров в корзине
     Route::get('index', 'BasketController@index')

@@ -6,6 +6,8 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Carbon;
+use Illuminate\Auth\Notifications\ResetPassword;
+use function MongoDB\BSON\toJSON;
 
 class User extends Authenticatable {
     use Notifiable;
@@ -73,5 +75,22 @@ class User extends Authenticatable {
      */
     public function profiles() {
         return $this->hasMany(Profile::class);
+    }
+/*
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new ResetPasswordNotification($token));
+    }
+*/
+
+    public function sendPasswordResetNotification($token) {
+        $notification = new ResetPassword($token);
+        $notification->createUrlUsing(function ($user, $token) {
+            return url(route('user.password.reset', [
+                'token' => $token,
+                'email' => $user->email
+            ]));
+        });
+        $this->notify($notification);
     }
 }
