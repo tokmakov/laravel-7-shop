@@ -7,7 +7,6 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Carbon;
 use Illuminate\Auth\Notifications\ResetPassword;
-use function MongoDB\BSON\toJSON;
 
 class User extends Authenticatable {
     use Notifiable;
